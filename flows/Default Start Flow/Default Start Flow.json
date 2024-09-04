@@ -1,0 +1,99 @@
+{
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default Start Flow",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "intent": "Default Welcome Intent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Welcome, I am the virtual agent that can help you book your flight trip or cancel flight. How can I help you?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "Book a Flight Trip?"
+            }, {
+              "text": "cancel my ticket"
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "8e1104b4-07b6-46e7-8569-3af74652b967",
+    "description": "what is your current city"
+  }, {
+    "intent": "main.book_a_flight",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Book Trip",
+    "name": "059a46e0-4d28-4253-986d-672ae36cd780"
+  }, {
+    "intent": "main.cancel_ticket",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "cancel ticket",
+    "name": "29343c41-95d7-4751-99e3-4aa5a09fb33f"
+  }, {
+    "intent": "main.check_status",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "your booking status is confirmed" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "check status",
+    "name": "19267e01-fb0b-46b1-be6d-65847fef94a1"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I am not able to answer that question. We will get back to you later." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "fba79e85-8510-4c7f-82f0-7fb0fa74cde2"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "a5d59c7d-25b3-4ed2-808e-60416fee09fb"
+  }, {
+    "event": "WELCOME",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Welcome, I am the virtual agent that can help you book your flight trip or check flight status. How can I help you?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "47f9d0c8-3a9e-41bc-96fb-bb796e7ef46a"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "languageCode": "en"
+  } ]
+}

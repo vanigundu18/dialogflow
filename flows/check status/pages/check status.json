@@ -1,0 +1,35 @@
+{
+  "name": "0db50313-8858-47f0-a3a9-b58c65f9cd1c",
+  "displayName": "check status",
+  "form": {
+    "parameters": [ {
+      "displayName": "booking_id",
+      "required": true,
+      "entityType": "@booking_id",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "can you please provide your booking id?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "full_name",
+      "required": true,
+      "entityType": "@sys.person",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "can you please provide your full name?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  }
+}

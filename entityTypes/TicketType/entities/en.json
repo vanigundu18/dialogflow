@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "First Class",
+    "synonyms": [ "First Class" ],
+    "languageCode": "en"
+  }, {
+    "value": "Business Class",
+    "synonyms": [ "Business Class" ],
+    "languageCode": "en"
+  }, {
+    "value": "Premium Economy",
+    "synonyms": [ "Premium Economy" ],
+    "languageCode": "en"
+  }, {
+    "value": "Economy",
+    "synonyms": [ "Economy" ],
+    "languageCode": "en"
+  } ]
+}

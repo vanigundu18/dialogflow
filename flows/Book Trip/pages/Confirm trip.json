@@ -1,0 +1,49 @@
+{
+  "name": "2f106507-fd29-4311-9a4c-f6d73ff60a6c",
+  "displayName": "Confirm trip",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "This is to confirm that $session.params.first_name will fly\nFrom: $session.params.departure_city\nTo: $session.params.destination_city\nLeaving on: $session.params.departure_date\nReturning on: $session.params.return_date\nTicket Type: $session.params.ticket_type\nFirst Name: $session.params.first_name\nLast Name: $session.params.last_name\nIs this correct?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great, your reservation is confirmed and the flight is booked!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "493b3070-bbce-452f-b58e-33a59d444edd"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok I will not book the flight ticket." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "87ab9bc4-b6a3-4e6d-b39c-800a205f8d36"
+  }, {
+    "intent": "confirmation.maybe",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "So what should I change?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "727d181c-5ae8-434f-90a4-46b340532e9e"
+  } ]
+}

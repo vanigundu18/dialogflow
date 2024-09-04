@@ -1,0 +1,10 @@
+{
+  "name": "df57c681-3957-4c88-a8df-156b5fe5b0a9",
+  "displayName": "database1",
+  "genericWebService": {
+    "uri": "https://your-webhook-service.com/handler?f=$session.params.booking_id\u0026s=$session.params.last_name\u0026s=$session.params.first_name"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

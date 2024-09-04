@@ -1,0 +1,35 @@
+{
+  "name": "6b65c368-2d19-431f-9256-e1858202aa01",
+  "displayName": "test",
+  "form": {
+    "parameters": [ {
+      "displayName": "person",
+      "required": true,
+      "entityType": "@sys.person",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "what is your real name?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "order_number",
+      "required": true,
+      "entityType": "@orderid",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "please provide the order id" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  }
+}

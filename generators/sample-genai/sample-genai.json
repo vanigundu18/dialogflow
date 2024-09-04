@@ -1,0 +1,13 @@
+{
+  "name": "3ccea424-be52-45a9-9b29-f40aa462fb9c",
+  "displayName": "sample-genai",
+  "modelParameter": {
+    "temperature": 0.5,
+    "maxDecodeSteps": 128,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-pro"
+  }
+}

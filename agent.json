@@ -1,0 +1,49 @@
+{
+  "defaultLanguageCode": "en",
+  "timeZone": "America/Chicago",
+  "projectNumber": 722426329881,
+  "speechToTextSettings": {
+  
+  },
+  "startFlow": "Default Start Flow",
+  "advancedSettings": {
+    "audioExportGcsDestination": {
+    
+    },
+    "speechSettings": {
+      "endpointerSensitivity": 90,
+      "noSpeechTimeout": {
+        "seconds": 5
+      }
+    },
+    "playbackInterruptionSettings": {
+    
+    },
+    "loggingSettings": {
+    
+    }
+  },
+  "speakerIdSettings": {
+  
+  },
+  "textToSpeechSettings": {
+    "synthesizeSpeechConfigs": [ {
+      "key": "en",
+      "value": {
+        "voice": {
+          "name": "en-US-Wavenet-E",
+          "ssmlGender": "SSML_VOICE_GENDER_FEMALE"
+        }
+      }
+    } ]
+  },
+  "duplexSettings": {
+  
+  },
+  "webClientSettings": {
+    "userInputColor": "#DB4437",
+    "agentResponseColor": "#4CAF50",
+    "agentResponseTextColor": "#000000",
+    "boxBorderRadius": "0"
+  }
+}
